@@ -79,8 +79,7 @@ void takeInput()
 // Getting output
 void calculateOutput()
 {
-  outputArray[0] = 0;
-  for (int i{1}; i < arraySize; i++)
+  for (int i{0}; i < arraySize; i++)
   {
     int count{0};
     for (int j{0}; j < i; j++)
