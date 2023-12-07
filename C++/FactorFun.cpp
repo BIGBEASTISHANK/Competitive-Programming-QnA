@@ -12,7 +12,7 @@ int arraySize{0};
 int *inputArray{nullptr};
 int *outputArray{nullptr};
 
-// define Functions
+// Declare Functions
 void takeInput();
 void calculateOutput();
 
@@ -34,7 +34,7 @@ int main()
   return 0;
 }
 
-// use function
+// Add logics to function
 // Take input
 void takeInput()
 {
