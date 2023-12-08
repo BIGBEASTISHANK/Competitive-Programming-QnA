@@ -76,7 +76,7 @@ int Calculation()
     // Sorting
     for (int i{0}; i < noOfDisk - 1; i++)
         for (int j{i + 1}; j < noOfDisk; j++)
-            if (heightOfAllDisk[j] < heightOfAllDisk[i])
+            if (heightOfAllDisk[j] > heightOfAllDisk[i])
             {
                 int temp = heightOfAllDisk[j];
                 heightOfAllDisk[j] = heightOfAllDisk[i];
