@@ -3,9 +3,8 @@
 
 // Header files
 #include <cmath>
-#include <ios>
 #include <iostream>
-#include <limits>
+#include "GlobalLogic.h"
 
 // Variables
 int arraySize{0};
@@ -41,7 +40,7 @@ void takeInput()
   // Taking array size
   std::cout << "Enter array size: ";
   std::cin >> arraySize;
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+  ClearInputBuffer();
   // Setting array size
 
   inputArray = new int[arraySize];
@@ -55,7 +54,7 @@ void takeInput()
     {
       std::cin >> inputArray[i];
     }
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    ClearInputBuffer();
 
     // Constraints 2 checking array data size
     for (int i = 0; i < arraySize; i++)

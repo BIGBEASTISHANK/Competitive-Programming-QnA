@@ -3,8 +3,7 @@
 
 // Include
 #include <iostream>
-#include <limits>
-#include <ios>
+#include "GlobalLogic.h"
 
 // Variable
 int numOfBar{0};
@@ -33,7 +32,7 @@ void TakeInput()
     // Setting total number of chocolate bar
     std::cout << "Enter total number of chocolate bar: ";
     std::cin >> numOfBar;
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clearing input buffer
+    ClearInputBuffer();
 
     // Constraints 1
     if (1 <= numOfBar && numOfBar <= 90)
@@ -49,7 +48,7 @@ void TakeInput()
               << "Enter each bar number seprated by space: ";
     for (int i{0}; i < numOfBar; i++)
         std::cin >> NOBData[i];
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clearing input buffer
+    ClearInputBuffer();
 
     // Constraint 2
     for (int i{0}; i < numOfBar; i++)
@@ -69,9 +68,8 @@ void TakeInput()
     // Taking data of birth
     std::cout << std::endl
               << "Enter data of birth (DD MM): ";
-    std::cin >> YDate;
-    std::cin >> YMonth;
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clearing input buffer
+    std::cin >> YDate >> YMonth;
+    ClearInputBuffer();
 
     // Constraing 3 & 4
     if (YDate > 31 || YDate < 1)
