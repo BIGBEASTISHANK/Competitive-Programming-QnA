@@ -2,20 +2,7 @@
 // - Take input of number of rs you have
 // - 1 Chocolate cost 1rs
 // - 1 Chocolate can also cost 3 wrappes
-// Find the maximum number of chocolates you can buy
-
-// Include
-#include <iostream>
-#include "GlobalLogic.h"
-
-// Variable
-int rs{0};
-const int costOfChocolate{1};
-const int chocolateCWW{3};
-
-// Declare function
-void TakeInput();
-int Calculation();
+// Find the maximum number of chocolates you can buy#include "MaximumChocolate.h"
 
 // Main functoin
 int main()

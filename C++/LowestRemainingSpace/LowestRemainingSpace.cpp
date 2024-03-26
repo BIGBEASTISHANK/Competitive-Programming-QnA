@@ -1,30 +1,6 @@
 // Question Url:
-// https://mycode.prepbytes.com/problems/recursion/MINVOID
+// https://mycode.prepbytes.com/problems/recursion/MINVOID#include "LowestRemainingSpace.h"
 
-// Include
-#include <cmath>
-#include <iostream>
-#include "GlobalLogic.h"
-
-// Variable
-int noOfDisk{0}, heightOfCylinder{0};
-int *heightOfAllDisk{nullptr};
-
-// Declare function
-void TakingInput();
-int Calculation();
-
-// Main function
-int main()
-{
-    // Call Function
-    TakingInput();
-    std::cout << Calculation();
-
-    return 0;
-}
-
-// Logic to variable
 // Taking input
 void TakingInput()
 {
@@ -89,4 +65,14 @@ int Calculation()
             totalSum += heightOfAllDisk[i];
 
     return heightOfCylinder - totalSum;
+}
+
+// Main function
+int main()
+{
+    // Call Function
+    TakingInput();
+    std::cout << Calculation();
+
+    return 0;
 }

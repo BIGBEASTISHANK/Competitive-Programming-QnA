@@ -1,18 +1,5 @@
 // Question url:
-// https://mycode.prepbytes.com/contest/PRIMETIMEJULY20/problems/DATEGAME
-
-// Include
-#include <iostream>
-#include "GlobalLogic.h"
-
-// Variable
-int numOfBar{0};
-int *NOBData{nullptr};
-int YDate{0}, YMonth{0};
-
-// Declare function
-void TakeInput();
-int Calculation();
+// https://mycode.prepbytes.com/contest/PRIMETIMEJULY20/problems/DATEGAME#include "BirthdayGame.h"
 
 // Main function
 int main()

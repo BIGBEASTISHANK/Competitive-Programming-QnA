@@ -1,12 +1,6 @@
-#pragma once
-
-// Include
 #include <ios>
-#include <iostream>
 #include <limits>
+#include <iostream>
 
 // Function
-void ClearInputBuffer() {
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
-                  '\n'); // Clearing input buffer
-}
+void ClearInputBuffer();

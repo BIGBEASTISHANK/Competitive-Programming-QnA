@@ -2,6 +2,8 @@
 app
 out
 main
+*.out
+*gch
 
 # Vscode
 .vscode/
